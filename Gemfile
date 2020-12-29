@@ -43,3 +43,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #To manage user authentication
 gem "devise"
 gem "simple_token_authentication"
+
+gem "faker"
