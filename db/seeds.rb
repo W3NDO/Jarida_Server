@@ -15,7 +15,14 @@ def user_set_up
     {email: email, password: password, password_confirmation: password_confirmation}
 end
 
+def entries_set_up
+    id = Random.rand(5)
+    content = Faker::TvShows::HowIMetYourMother.quote
+
+    {user_id: id, content: content}
+end
+
 5.times do
     User.create(user_set_up)
-
+    Entry.create(entries_set_up)
 end
